@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="zipcode" transform="translate(-311 -652)">
+    <g id="Rectangle_104" data-name="Rectangle 104" transform="translate(311 652)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+      <rect width="16" height="16" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="15" height="15" rx="1.5" fill="none"/>
+    </g>
+    <g id="Group_57" data-name="Group 57" transform="translate(1)">
+      <g id="Ellipse_15" data-name="Ellipse 15" transform="translate(313 662)" fill="#fff" stroke="#fff" stroke-width="0.5">
+        <circle cx="1" cy="1" r="1" stroke="none"/>
+        <circle cx="1" cy="1" r="0.75" fill="none"/>
+      </g>
+      <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(316 662)" fill="#fff" stroke="#fff" stroke-width="0.5">
+        <circle cx="1" cy="1" r="1" stroke="none"/>
+        <circle cx="1" cy="1" r="0.75" fill="none"/>
+      </g>
+      <g id="Ellipse_17" data-name="Ellipse 17" transform="translate(319 662)" fill="#fff" stroke="#fff" stroke-width="0.5">
+        <circle cx="1" cy="1" r="1" stroke="none"/>
+        <circle cx="1" cy="1" r="0.75" fill="none"/>
+      </g>
+      <g id="Ellipse_18" data-name="Ellipse 18" transform="translate(322 662)" fill="#fff" stroke="#fff" stroke-width="0.5">
+        <circle cx="1" cy="1" r="1" stroke="none"/>
+        <circle cx="1" cy="1" r="0.75" fill="none"/>
+      </g>
+    </g>
+    <g id="Rectangle_105" data-name="Rectangle 105" transform="translate(313 659)" fill="#fff" stroke="#fff" stroke-linecap="round" stroke-width="1">
+      <rect width="12" height="1" rx="0.5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="11" fill="none"/>
+    </g>
+    <text id="ZIP" transform="translate(316 658)" fill="#fff" font-size="4" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">ZIP</tspan></text>
+  </g>
+</svg>

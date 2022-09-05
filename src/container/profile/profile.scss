@@ -1,0 +1,36 @@
+.content-wrapper {
+  background: #f1f1f1 !important;
+}
+.saveProfileBtn{
+    background: transparent;
+    border-radius: 5px;
+    min-width: 150px;
+    box-shadow: none;
+    height: 45px;
+    border: 1px solid #3a86ff;
+    outline-offset: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.5s all;
+    color: rgb(69, 69, 69);
+    &:hover{
+        background-color: #3a86ff;
+        color: white;
+    }
+}
+.securityPanal{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: revert;
+    padding: 16px;
+}
+.securityTab{
+    width: 70%;
+    border: 1px solid rgb(184, 184, 184);
+}
+.inputLabel{
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}

@@ -1,0 +1,17 @@
+
+.profile-avatar {
+    position: relative;
+}
+
+.popup-menu{
+    position: absolute;
+    font-size: 0.9rem;
+    margin-top: 0;
+    right: 0;
+    top: 70px;
+    width: 288px;
+    height: 198px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 3px 21px 0px rgb(0 0 0 / 20%);
+}

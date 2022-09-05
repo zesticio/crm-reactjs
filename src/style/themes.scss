@@ -1,0 +1,92 @@
+$text--light: rgb(0, 0, 0);
+$text--dark: rgb(255, 255, 255);
+$bg--light: #f1f1f1;
+$bg--dark: rgb(58, 58, 58);
+$bg--sidebarlight : #595F69 ; 
+$text-sidebarlight : white ; 
+$bg--sidebardark : #595F69 ; 
+$text-sidebardark : white ; 
+$bg--headerlight : #FFFF ; 
+$text-headerlight : black ; 
+$bg--headerdark : #000000 ; 
+$text-headerdark : white ; 
+
+$themes: (
+        light: (
+                bg: $bg--light,
+                text: $text--light,
+        ),
+        dark: (
+                bg: $bg--dark,
+                text: $text--dark,
+        ),
+);
+
+$sidebar: (
+        light: (
+                bg: $bg--sidebarlight,
+                text: $text-sidebarlight,
+        ),
+        dark: (
+                bg: $bg--sidebardark,
+                text: $text-sidebardark,
+        ),
+);
+
+
+$header: (
+        light: (
+                bg: $bg--headerlight,
+                text: $text-headerlight,
+        ),
+        dark: (
+                bg: $bg--headerdark,
+                text: $text-headerdark,
+        ),
+);
+
+@mixin themed() {
+  @each $theme, $map in $themes {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@mixin sidebarTheme() {
+  @each $theme, $map in $sidebar {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($sidebar, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@mixin headerTheme() {
+  @each $theme, $map in $header {
+    .theme--#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($header, $theme), '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function t($key) {
+  @return map-get($theme-map, $key);
+}
