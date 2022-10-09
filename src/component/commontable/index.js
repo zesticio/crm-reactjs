@@ -1,10 +1,11 @@
 import React from "react";
+import "./index.scss";
 
 export function CommonTable({ tableHdr, tableData, apiStatus }) {
   return (
     <React.Fragment>
       <div className="table-responsive">
-        <table id="order-listing" className="table common-table">
+        <table className="table common-table">
           <thead>
             <tr>
               {tableHdr !== undefined &&
@@ -19,7 +20,7 @@ export function CommonTable({ tableHdr, tableData, apiStatus }) {
               Array.isArray(tableData) &&
               tableData.map((dataItem, index) => {
                 return (
-                  <tr key={index}>
+                  <tr key={index} className="common-table-row">
                     <td>test</td>
                     <td>test</td>
                     <td>Test</td>
